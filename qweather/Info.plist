@@ -1,0 +1,33 @@
+{
+	CFBundleIdentifier = {
+		"CFBundleDevelopmentRegion" = "$(DEVELOPMENT_LANGUAGE)";
+		CFBundleExecutable = "$(EXECUTABLE_NAME)";
+		"NSLocationWhenInUseUsageDescription" = "This app requires your location to provide weather data.";
+		CFBundleIdentifier = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+		"CFBundleInfoDictionaryVersion" = "6.0";
+		CFBundleName = "$(PRODUCT_NAME)";
+		CFBundlePackageType = "$(PRODUCT_BUNDLE_PACKAGE_TYPE)";
+		"CFBundleShortVersionString" = "1.0";
+		CFBundleVersion = 1;
+		LSRequiresIPhoneOS = YES;
+		"UIApplicationSceneManifest" = {
+			"UIApplicationSupportsMultipleScenes" = YES;
+		};
+		"UIApplicationSupportsIndirectInputEvents" = YES;
+		UILaunchScreen = {};
+		"UIRequiredDeviceCapabilities" = (
+			armv7,
+		);
+		"UISupportedInterfaceOrientations" = (
+			"UIInterfaceOrientationPortrait",
+			"UIInterfaceOrientationLandscapeLeft",
+			"UIInterfaceOrientationLandscapeRight",
+		);
+		"UISupportedInterfaceOrientations~ipad" = (
+			"UIInterfaceOrientationPortrait",
+			"UIInterfaceOrientationPortraitUpsideDown",
+			"UIInterfaceOrientationLandscapeLeft",
+			"UIInterfaceOrientationLandscapeRight",
+		);
+	};
+}

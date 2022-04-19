@@ -8,19 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		828C4EB027D962460065EA0D /* qweatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828C4EAF27D962460065EA0D /* qweatherApp.swift */; };
-		828C4EB227D962460065EA0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828C4EB127D962460065EA0D /* ContentView.swift */; };
+		828C4EB227D962460065EA0D /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828C4EB127D962460065EA0D /* WeatherView.swift */; };
 		828C4EB427D962490065EA0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 828C4EB327D962490065EA0D /* Assets.xcassets */; };
 		828C4EB727D962490065EA0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 828C4EB627D962490065EA0D /* Preview Assets.xcassets */; };
-		828C4EBE27D974F20065EA0D /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828C4EBD27D974F10065EA0D /* WeatherButton.swift */; };
+		82ACECF3280443B9008D8FB0 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACECF2280443B9008D8FB0 /* WeatherService.swift */; };
+		82ACECF528045016008D8FB0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACECF428045016008D8FB0 /* Weather.swift */; };
+		82B2D06C280EC5A600CDABB9 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B2D06B280EC5A600CDABB9 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		828C4EAC27D962460065EA0D /* qweather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qweather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		828C4EAF27D962460065EA0D /* qweatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qweatherApp.swift; sourceTree = "<group>"; };
-		828C4EB127D962460065EA0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		828C4EB127D962460065EA0D /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		828C4EB327D962490065EA0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		828C4EB627D962490065EA0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		828C4EBD27D974F10065EA0D /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
+		82ACECF2280443B9008D8FB0 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		82ACECF428045016008D8FB0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		82B2D06B280EC5A600CDABB9 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		82B2D06D280ECFE900CDABB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				828C4EAF27D962460065EA0D /* qweatherApp.swift */,
-				828C4EB127D962460065EA0D /* ContentView.swift */,
+				828C4EB127D962460065EA0D /* WeatherView.swift */,
+				82ACECF2280443B9008D8FB0 /* WeatherService.swift */,
+				82B2D06B280EC5A600CDABB9 /* WeatherViewModel.swift */,
 				828C4EB327D962490065EA0D /* Assets.xcassets */,
+				82ACECF428045016008D8FB0 /* Weather.swift */,
+				82B2D06D280ECFE900CDABB9 /* Info.plist */,
 				828C4EB527D962490065EA0D /* Preview Content */,
-				828C4EBD27D974F10065EA0D /* WeatherButton.swift */,
 			);
 			path = qweather;
 			sourceTree = "<group>";
@@ -140,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				828C4EB227D962460065EA0D /* ContentView.swift in Sources */,
+				82ACECF3280443B9008D8FB0 /* WeatherService.swift in Sources */,
+				82B2D06C280EC5A600CDABB9 /* WeatherViewModel.swift in Sources */,
+				828C4EB227D962460065EA0D /* WeatherView.swift in Sources */,
 				828C4EB027D962460065EA0D /* qweatherApp.swift in Sources */,
-				828C4EBE27D974F20065EA0D /* WeatherButton.swift in Sources */,
+				82ACECF528045016008D8FB0 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +283,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"qweather/Preview Content\"";
-				DEVELOPMENT_TEAM = RF5MQ2D9MZ;
+				DEVELOPMENT_TEAM = H4MF7S337P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationUsageDescription = "This app requires your location to provide weather data.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires your location to provide weather data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,9 +314,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"qweather/Preview Content\"";
-				DEVELOPMENT_TEAM = RF5MQ2D9MZ;
+				DEVELOPMENT_TEAM = H4MF7S337P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationUsageDescription = "This app requires your location to provide weather data.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires your location to provide weather data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
